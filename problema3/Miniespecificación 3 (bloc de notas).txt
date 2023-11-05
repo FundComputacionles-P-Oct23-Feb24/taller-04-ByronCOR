@@ -1,0 +1,13 @@
+1   Inicio
+2   centigrados,d[0-n]
+3   fahrenheit,d[0-n]
+4   kelvin,d[0-n]
+5   <<"Ingresar la temperatura en grados centígrados."
+6   >>centigrados
+7   Si centigrados>=0 and centigrados<=100 entonces 
+8       fahrenheit<--(centigrados*9/5)+32
+9       kelvin<--centigrados+273.15
+10      <<"La temperatura en grados Fahrenheit es: "+fahrenheit
+11      <<"La temperatura en grados Kelvin es: "+kelvin
+12  Fin Si
+13  Fin

@@ -1,0 +1,30 @@
+1   Inicio
+2   numDia,i[0-n]
+3   subtotal,d[0-n] 
+4   descuento,d[0-n]
+5   total,d[0-n]
+6   <<"Ingrese el valor del costo por Kilovatio/hora."
+7   <<"Ingresar el número de días de hospedaje."
+8   >>numDia
+9   <<"Ingresar el precio de la habitación."
+10  >>habiValor
+11  subtotal<--numDia*habiValor
+12  Si numDia>5 and numDia<11 entonces 
+13     descuento<--subtotal*0.10
+14     total<--subtotal-descuento
+15  De lo contrario
+16     Si numDia>10 and numDia<16 entonces 
+17         descuento<--subtotal*0.15
+18         total<--subtotal-descuento
+19     De lo contrario
+20         Si numDia>15  entonces 
+21             descuento<--subtotal*0.20
+22             total<--subtotal-descuento
+23         De lo contrario
+24             descuento<--0
+25             total<--subtotal
+26         Fin Si
+27     Fin Si
+28  Fin Si
+29  <<"Subtotal: "+subtotal" Descuento: "+descuento" Total: "+total
+30  Fin

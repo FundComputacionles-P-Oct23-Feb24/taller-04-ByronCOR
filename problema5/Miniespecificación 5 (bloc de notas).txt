@@ -1,0 +1,23 @@
+1   Inicio
+2   agua_mes,d[0-n] 
+3   agua_valor,d[0-n] 
+4   phone_mes,d[0-n] 
+5   phone_valor,d[0-n] 
+6   valor_total,d[0-n] 
+7   edad,i[0-n]
+8   <<"Ingresar el número de litros de agua consumidos en el mes."
+9   agua_mes
+10  <<"Ingresar el costo por cada litro de agua."
+11  agua_valor
+12  <<"Ingresar el número de minutos de teléfono gastados en el mes."
+13  phone_mes
+14  <<"Ingresar el costo por cada minuto del teléfono."
+15  phone_valor
+16  <<"Ingresar su edad."
+17  edad
+18  valor_total<--(agua_mes*agua_valor)+(phone_mes*phone_valor)
+19  Si edad<20 entonces 
+20      valor_total<--valor_total-(valor_total*0.20)
+21  Fin Si
+22  <<"El valor total a pagar mensual de servicios básicos es: "+valor_total
+23  Fin

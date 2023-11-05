@@ -1,0 +1,18 @@
+1   Inicio
+2   articulo,x(30)[{a-z},{A-Z},{BS}]
+3   val_arti,d[0-n]
+4   num_arti,i[0-n]
+5   val_total,d[0-n]
+6   <<"Ingrese el nombre del artículo."
+7   >>articulo
+8   <<"Ingrese el precio del artículo."
+9   >>val_arti
+10  <<"Ingrese el número de unidades a comprar."
+11  >>num_arti
+12  val_total<--val_arti*num_arti
+13  Si num_arti>50 entonces 
+14      val_total<--val_total-(val_total*0.15)
+15  Fin Si
+16  <<"Nombre del artículo: "+articulo
+17  <<"El costo de su pedido es el siguiente: "+val_total
+18  Fin

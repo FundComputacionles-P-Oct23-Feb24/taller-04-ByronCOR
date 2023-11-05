@@ -1,0 +1,17 @@
+1   Inicio
+2   costoHora,d[0-n]
+3   consumoMes,d[0-n]
+4   edad,i[0-n]
+5   valorTotal,d[0-n]
+6   <<"Ingrese el valor del costo por Kilovatio/hora."
+7   >>costoHora
+8   <<"Ingrese el número de Kilovatios consumido en el mes."
+9   >>consumoMes
+10  <<"Ingrese su edad."
+11  >>edad
+12  valorTotal<--costoHora*consumoMes
+13  Si edad>65 entonces 
+14     valorTotal<--valorTotal-(valorTotal*0.10)
+15  Fin Si
+16  <<"El valor a cancelar en la planilla de luz es: "+valorTotal
+17  Fin
